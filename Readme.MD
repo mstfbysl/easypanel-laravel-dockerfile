@@ -10,29 +10,14 @@ This guide outlines how to deploy a Laravel application using Easypanel, leverag
 
 ## Setup Instructions
 
-### Step 1: Prepare Your Laravel Application
-
-* **Copy Docker Configuration**: Clone this repository or download the `/docker` folder. Copy the `/docker` folder into the root directory of your Laravel application.
-
-   For detailed information on the base Docker image and customization options, visit the [webdevops/php-nginx:8.2 documentation](https://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-nginx.html#).
-
-### Step 2: Create a New Application in Easypanel
-
-* ***Access Easypanel**: Log in to your Easypanel dashboard.
-* **Create Application**: Create a Service, then select "App".
-   
+* **Copy Docker File**: Clone this repository or download the `/docker` folder. Copy the `/docker` folder into the root directory of your Laravel application.
+* **Create App on Easypanel**: Create a Service, then select "App".
 * **Build Configuration**:
    - In the 'Build' section, select the "Dockerfile" option.
    - Set the "File" field to `/docker/Dockerfile` to inform Easypanel to use the Dockerfile in your application's `/docker` directory.
-
-### Step 3: Set Environment Variables
-
 * **Environment Setup**:
    - Move to the 'Environment' tab.
    - Input all necessary environment variables for your Laravel application, including database connections, app key, and any other required settings.
-
-### Step 4: Deploy Your Application
-
 * **Deploy**:
    - Complete the configuration and environment variable setup, then deploy your Laravel application.
    - Easypanel will build and deploy your Docker container based on the provided Dockerfile and configurations.
