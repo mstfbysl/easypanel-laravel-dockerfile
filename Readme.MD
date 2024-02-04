@@ -57,3 +57,14 @@ This guide outlines how to deploy a Laravel application using Easypanel, leverag
 ## Contributing
 
 Contributions are welcome for improving both the Docker setup and the deployment guide. Feel free to fork the repository, make improvements, and submit a pull request or open an issue for any suggestions or bugs.
+
+## License 📜
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact 📫
+
+- Your Name - your_email@example.com
+- Project Link: [https://github.com/mstfbysl/easypanel-laravel-dockerfile](https://github.com/mstfbysl/easypanel-laravel-dockerfile)
+
+Made with ❤️ by the msftbysl.
