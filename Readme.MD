@@ -12,33 +12,28 @@ This guide outlines how to deploy a Laravel application using Easypanel, leverag
 
 ### Step 1: Prepare Your Laravel Application
 
-1. **Copy Docker Configuration**: Clone this repository or download the `/docker` folder. Copy the `/docker` folder into the root directory of your Laravel application.
+* **Copy Docker Configuration**: Clone this repository or download the `/docker` folder. Copy the `/docker` folder into the root directory of your Laravel application.
 
    For detailed information on the base Docker image and customization options, visit the [webdevops/php-nginx:8.2 documentation](https://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-nginx.html#).
 
 ### Step 2: Create a New Application in Easypanel
 
-2. **Access Easypanel**: Log in to your Easypanel dashboard.
-3. **Create Application**: Go to the 'Applications' section and click on 'Create Application'.
-4. **Application Setup**:
-   - Choose 'Custom' for the application type.
-   - Link your GitHub repository or upload your Laravel application files when prompted for the source.
+* ***Access Easypanel**: Log in to your Easypanel dashboard.
+* **Create Application**: Create a Service, then select "App".
    
-### Step 3: Configure the Build Settings
-
-5. **Build Configuration**:
+* **Build Configuration**:
    - In the 'Build' section, select the "Dockerfile" option.
    - Set the "File" field to `/docker/Dockerfile` to inform Easypanel to use the Dockerfile in your application's `/docker` directory.
 
-### Step 4: Set Environment Variables
+### Step 3: Set Environment Variables
 
-6. **Environment Setup**:
+* **Environment Setup**:
    - Move to the 'Environment' tab.
    - Input all necessary environment variables for your Laravel application, including database connections, app key, and any other required settings.
 
-### Step 5: Deploy Your Application
+### Step 4: Deploy Your Application
 
-7. **Deploy**:
+* **Deploy**:
    - Complete the configuration and environment variable setup, then deploy your Laravel application.
    - Easypanel will build and deploy your Docker container based on the provided Dockerfile and configurations.
 
